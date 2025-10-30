@@ -170,6 +170,31 @@ form .button {
     margin-top: 1rem;
 }
 
+.quote-results {
+    background: #e0f7fa; /* Light blue background */
+    border-left: 5px solid var(--primary-color);
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+}
+
+.quote-results h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.quote-results p {
+    margin-bottom: 0.5rem;
+}
+
+.quote-results .disclaimer {
+    font-size: 0.9rem;
+    color: var(--light-text-color);
+    margin-top: 1rem;
+}
+
 /* Footer */
 footer {
     background: var(--text-color);

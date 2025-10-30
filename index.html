@@ -67,7 +67,8 @@
         <section id="contact" class="container">
             <h2>Ready for a Fresh Look? Get Your Free Quote Today!</h2>
             <p>Contact Precision Paint Partners today for a detailed, no-obligation estimate. Let's bring your vision to life!</p>
-            <form>
+            <form action="https://formspree.io/f/mldolqyr" method="POST" id="quoteForm">
+                <input type="hidden" name="_subject" value="New Quote Request from Precision Paint Partners Website">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -89,11 +90,32 @@
                     </select>
                 </div>
                 <div class="form-group">
+                    <label for="square-footage">Estimated Square Footage to Paint:</label>
+                    <input type="number" id="square-footage" name="square-footage" min="50" required>
+                </div>
+                <div class="form-group">
+                    <label for="num-rooms">Number of Rooms:</label>
+                    <input type="number" id="num-rooms" name="num-rooms" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="paint-type">Preferred Paint/Finish:</label>
+                    <select id="paint-type" name="paint-type">
+                        <option value="standard">Standard (e.g., Flat/Eggshell)</option>
+                        <option value="premium">Premium (e.g., Satin/Semi-Gloss)</option>
+                        <option value="specialty">Specialty (e.g., Low-VOC/Textured)</option>
+                    </select>
+                </div>
+                <div class="form-group">
                     <label for="message">Message/Project Details:</label>
                     <textarea id="message" name="message" rows="5"></textarea>
                 </div>
-                <button type="submit" class="button">Submit Request</button>
+                <button type="submit" class="button">Get Rough Estimate & Send Inquiry</button>
             </form>
+            <div id="quoteResults" class="quote-results">
+                <h3>Rough Estimate:</h3>
+                <p id="estimatedCost">$0.00</p>
+                <p class="disclaimer">This is a preliminary estimate based on your inputs and does not constitute a final quote. A detailed, on-site estimate will be provided upon request.</p>
+            </div>
             <p>Or contact us directly:</p>
             <p>Phone: <a href="tel:+19794466263">979-446-6263</a> (Call or Text)</p>
             <p>Email: <a href="mailto:precisionpaintpartner@gmail.com">precisionpaintpartner@gmail.com</a></p>
