@@ -67,6 +67,31 @@ header h1 {
     transform: translateY(-2px);
 }
 
+nav {
+    margin-top: 1.5rem;
+}
+
+nav a {
+    margin: 0 10px;
+}
+
+.button-small {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent white */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-small:hover {
+    background: rgba(255, 255, 255, 0.4);
+    border-color: #fff;
+}
+
 /* Main Content Headings */
 h2 {
     font-family: 'Montserrat', sans-serif;
