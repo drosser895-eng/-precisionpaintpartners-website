@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="16" fill="#eee" stroke="#111"/>
+  <path d="M20 80 L50 30 L70 60 L100 20" stroke="#111" stroke-width="6" fill="none"/>
+  <text x="60" y="105" text-anchor="middle" font-family="Verdana,Arial" font-size="16" fill="#111">PPP</text>
+</svg>
